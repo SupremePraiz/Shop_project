@@ -5,12 +5,14 @@ body {
 }
 
 /* Header */
-.header {
+header{
     background-color: rgb(10, 10, 75);
-    padding: 15px 60px;
+    color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
     position: sticky;
     top: 0;
     left: 0;
@@ -18,22 +20,27 @@ body {
     
 }
 
+a{
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+}
+
+a:hover{
+    color: rgb(90, 90, 229);
+}
+
 .logo {
     font-size: 24px;
     font-weight: bold;
     color: white;
+    margin-left: 40px;
 }
 
-.header nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
+header nav{
+    margin-right: 15px;
 }
 
-.header nav a:hover {
-    color: #1e88e5;
-}
 
 /* Hero */
 .div1 {
@@ -155,4 +162,26 @@ body {
     color: #ccc;
     text-align: center;
     padding: 20px;
+}
+
+
+
+@media screen and (max-width: 600px){
+    body{
+        margin: 5px;
+        overflow-x: hidden;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: small;
+    }
+
+    .parent_section{
+        flex-direction: column;
+    }
+
+    .category_div{
+        flex-direction: column;
+    }
+
+
 }
